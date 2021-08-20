@@ -7,13 +7,13 @@ body {
 	font-family: joanna-sans-nova, sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	/* background-color: #ecf4f5; */
+	width: 100%;
+	min-height: 100%;
 }
 
 header {
-	height: 5rem;
-	width: 100%;
-	margin: 1rem;
+	height: 4rem;
+	margin: 2rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -22,24 +22,28 @@ header {
 .menu,
 li {
 	list-style-type: none;
-	padding: 0.1rem;
 	display: flex;
 	flex-direction: row;
 	margin-right: 1rem;
 	color: #585857;
+	font-size: 1rem;
 }
 
 .seal {
 	width: 8%;
+	margin: 1rem;
+}
+img {
+	width: 85%;
 }
 main {
 	display: flex;
-	width: 100%;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding-top: 3rem;
+	padding-top: 2rem;
 	background: #ecf4f5;
+	margin: 3rem;
 }
 .box {
 	width: 25%;
@@ -55,25 +59,96 @@ p {
 }
 .container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	padding-bottom: 5rem;
+	text-align: center;
+	padding: 1rem;
+}
+
+.left {
+	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	flex-direction: column;
-	padding: 2rem;
+	width: 45%;
+}
+.right {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 45%;
+}
+
+.boat-img,
+.seal-img {
 	width: 100%;
 }
 
-img {
-	width: 70%;
+.text {
+	width: 50%;
+}
+
+button {
+	border: none;
+	background: white;
+	cursor: pointer;
+	padding: 0.6rem;
+	text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+	color: #035f6a;
 }
 
 footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 1rem;
+	flex-direction: row;
+	margin: 2rem;
 }
 
-h1,
-h1 {
+.footer-icon,
+i {
 	color: #035f6a;
+	padding: 0.3rem;
+	font-size: 1.1rem;
+	text-align: right;
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+}
+
+a :hover {
+	color: #94d1d8;
+}
+
+@media all and (max-width: 700px) {
+	.seal {
+		visibility: hidden;
+	}
+
+	.main {
+		padding: 1rem;
+	}
+	.container {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.left,
+	.right {
+		width: 100%;
+	}
+
+	.footer-container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
 }
